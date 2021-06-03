@@ -1,3 +1,35 @@
-body {
-    background-color: green;
+* {
+    background-color: #EAC926;
+    font-family: roboto;
+}
+footer {
+    font-size: 12px;
+}
+.section {
+    font-size: 24px;
+}
+.price {
+    font-size: 18px;
+}
+.discount {
+    font-size: 16px;
+}
+.description {
+    font-size: 16px;
+}
+.metodo_pago {
+    text-align: center;
+}
+.burger-button {
+    background-color: mediumblue;
+    border-radius: 5px;
+    margin-left: 40%;
+}
+footer {
+    text-align: center;
+}
+.icon_footer {
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
