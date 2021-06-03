@@ -1,3 +1,4 @@
+/* Revisar esta instrucción, ya que aplica fondo amarillo a TODOS los elementos */
 * {
     background-color: #EAC926;
     font-family: roboto;
@@ -23,8 +24,14 @@ footer {
 .burger-button {
     background-color: mediumblue;
     border-radius: 5px;
-    margin-left: 40%;
+    color: white;
+    width: 25px;
+    height: 25px
 }
+
+.burger-button i {
+    background: transparent;
+} 
 footer {
     text-align: center;
 }
@@ -32,4 +39,10 @@ footer {
     color: blue;
     font-size: 2em;
     margin-bottom: 10px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
