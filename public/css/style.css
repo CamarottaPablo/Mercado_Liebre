@@ -1,23 +1,108 @@
-/* Revisar esta instrucción, ya que aplica fondo amarillo a TODOS los elementos */
 * {
+    font-family: roboto, sans-serif;
+    box-sizing: content-box;
+}
+main {
+    background-color: rgba(226, 225, 225, 0.4);
+}
+.main-header {
     background-color: #EAC926;
-    font-family: roboto;
+    padding: 20px;
+    width: 100vw;
+}
+
+.hamburger-button {
+    background-color: #03264c;    
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.logoML {
+    width: 200px;
+}
+
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+}
+
+.main-navbar {
+    display: none;
+}
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+
+.logo-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    width: 100vw;
+}
+
+.search {
+    width: 60%;
+}
+
+.site {
+    display: none;
 }
 footer {
     font-size: 12px;
 }
 .section {
     font-size: 24px;
+    background-color: rgba(226, 225, 225, 0.4);
 }
 .price {
     font-size: 18px;
 }
 .discount {
     font-size: 16px;
+    color: rgb(82, 212, 82);
 }
 .description {
+    display: none;
     font-size: 16px;
 }
+
+.borde {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: solid 2px rgb(82, 212, 82);
+    border-radius: 50%;
+    
+}
+.fa-truck::before {
+    margin-top: 8px;
+    margin-left: 6px;
+    color: rgb(82, 212, 82);
+}
+
+
+
 .metodo_pago {
     text-align: center;
 }
@@ -46,3 +131,159 @@ footer {
     justify-content: center;
     align-items: center;
 }
+main {
+    width: 90%;
+}
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10px;
+    border: solid 10px rgba(226, 225, 225, 0.4);
+    
+}
+.details {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+
+}
+.fa-truck {
+    color: green;
+}
+
+.create-form {
+    padding: 20px 15px;
+    width: 100vw;
+}
+.control-formulario {
+    margin: 15px;
+    width: 90vw;
+    display: flex;
+    align-content: center;
+    padding: 15px;
+    justify-content: center;
+}
+
+.input {
+    justify-content: center;
+    width: 90vw;
+    height: 30px;
+}
+.control-formulario label {
+    margin: 5px;
+    font-style: italic;
+    display: block;
+}
+.control {
+    width: 100%;
+    padding: 8px;
+}
+.boton-formulario {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.tituloPerfil {
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: stretch;
+}
+
+.date {
+    width: 90vw;
+    height: 35px;
+}
+
+@media (min-width: 361px) {
+    .description {
+        display: none;
+    }
+    .site {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo-search {
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    }
+    .hamburger-button {
+        display: none;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 0 5px;
+    }
+        
+    .site {
+        display: block;
+    }
+
+    .description {
+        display: block;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .logoML {
+        width: 250px;
+    }
+    .main-header, 
+    .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .main-header{
+        align-items: center;
+    }
+    .copy-header {
+        margin: 0;
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .main-navbar {
+        margin-top: 40px;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 19px;
+    }
+    .description {
+        display: block;
+    }
+}
+
+
+
+/* === COLORES ===
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666666;
+Gris claro: #ebebeb;
+Verde: #39b54a */
