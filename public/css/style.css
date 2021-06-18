@@ -1,6 +1,6 @@
 * {
     font-family: roboto, sans-serif;
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 0px;
 }
 body {
@@ -9,7 +9,7 @@ body {
 
 main {
     background-color: #ebebeb;
-    width: 90vw;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -23,12 +23,13 @@ main {
 .fa-search {
     position: relative;
     top: 0px;
-    left: 0px;
+    left: -28px;
 }
 
 .copy-header {
     text-align:center;
     padding-bottom: 15px;
+    font-size: smaller;
 }
 
 .hamburger-button {
@@ -46,12 +47,15 @@ main {
 .logoML {
     width: 50%;
 }
+.barra-search {
+    width: 50%;
+}
 .search {
-    width: 44%;
+    width: 80%;
     border-radius: 10px;
-    height: 43px;
+    height: 40px;
     border: none;
-    margin-left: 20px;
+    margin-left: 5px;
 }
 .logo-search {
     justify-content: center;
@@ -87,7 +91,7 @@ main {
 }
 
 .banner {
-    width: 100vw;
+    width: 100%;
 }
 
 ul {
@@ -119,6 +123,12 @@ footer {
     position: relative;
     left: 177px;
     bottom: -27px;
+}
+.fa-truck {
+    transition: all .6s;
+}
+.fa-truck:hover {
+    transform: rotate(360deg);
 }
 .price {
     font-size: 18px;
@@ -213,9 +223,10 @@ h4 {
     margin-left: 5px;
 }
 .control-formulario {
-    width: 90vw;
+    width: 90%;
     display: block;
     padding: 8px;  
+    margin: 15px;
 }
 
 .control-formulario label {
@@ -307,20 +318,20 @@ h4 {
     }
     .logo-search {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .barra-search {
         width: 42%;
     }
     .search {
-        width: 80%;
+        width: 87%;
+        margin-left: 15px;
     }
 
     .copy-header {
         max-width: 350px;
         text-align: right;
         margin-bottom: 10px;
-        font-size: 16px;
         margin: 0px;
         padding: 0px;
 
@@ -360,7 +371,7 @@ h4 {
         width: 90vw;
         display: block;
         padding: 8px;
-        margin: 15px;    
+        margin-left: 15px;    
     }
 }
 
@@ -370,7 +381,7 @@ h4 {
     }
     main {
         margin-right: 15px;
-        width: 100vw;
+        width: 100%;
     }
     
     .main-header, 
@@ -388,9 +399,13 @@ h4 {
         font-weight: 400;
         display: flex;
         flex-direction: row-reverse;
+        margin-left: 15px;
     }
     .search {
-        width: 45%;
+        width: 90%;
+    }
+    .logo-search {
+        justify-content: space-between;
     }
     .fa-search {
         position: relative;
@@ -413,6 +428,7 @@ h4 {
         left: 168px;
         bottom: -27px;
     }
+
     .conjunto-de-articulos {
         display: flex;
         justify-content: space-between;
@@ -423,6 +439,12 @@ h4 {
         box-shadow: 0px 0px 10px #646464;
         width: 20%;
         margin: 27px;
+    }
+    .control-formulario {
+        width: 90vw;
+        display: block;
+        padding: 8px;
+        margin: 15px;    
     }
 }
 
