@@ -23,7 +23,7 @@ main {
 .fa-search {
     position: relative;
     top: 0px;
-    left: -28px;
+    left: 0px;
 }
 
 .copy-header {
@@ -74,6 +74,7 @@ main {
 }
 .main-navbar ul {
     list-style: none;
+    margin: 0;
     padding: 0;
 }
 
@@ -149,6 +150,8 @@ footer {
     color: #39b54a;
 }
 
+
+
 .metodo_pago {
     text-align: center;
 }
@@ -175,14 +178,16 @@ footer {
     color: #39b54a;
 }
 
-.flex-center,
-article {
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     align-content: center;
     margin-bottom: 10px;
     background-color: white;
@@ -363,15 +368,9 @@ h4 {
     .logoML {
         width: 250px;
     }
-    .logo-search {
-        justify-content: start;
-    }
     main {
         margin-right: 15px;
         width: 100vw;
-    }
-    .right-navbar {
-        margin-right: 40px;
     }
     
     .main-header, 
@@ -391,11 +390,12 @@ h4 {
         flex-direction: row-reverse;
     }
     .search {
-        width: 90%;
-        margin-left: 27px;
+        width: 45%;
     }
-    .cuotas {
-        margin-left: 40px;
+    .fa-search {
+        position: relative;
+        top: 0px;
+        left: -28px;
     }
     .main-navbar {
         margin-top: 40px;
