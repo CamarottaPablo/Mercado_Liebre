@@ -1,14 +1,34 @@
 * {
     font-family: roboto, sans-serif;
     box-sizing: content-box;
+    margin: 0px;
 }
+body {
+    background-color: #ebebeb;
+}
+
 main {
-    background-color: rgba(226, 225, 225, 0.4);
+    background-color: #ebebeb;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .main-header {
     background-color: #EAC926;
     padding: 20px;
-    width: 100vw;
+    top: 0;
+    position: flex;
+}
+.fa-search {
+    position: relative;
+    top: 0px;
+    left: -28px;
+}
+
+.copy-header {
+    text-align:center;
+    padding-bottom: 15px;
 }
 
 .hamburger-button {
@@ -24,12 +44,29 @@ main {
 }
 
 .logoML {
-    width: 200px;
+    width: 50%;
+}
+.search {
+    width: 44%;
+    border-radius: 10px;
+    height: 43px;
+    border: none;
+    margin-left: 20px;
+}
+.logo-search {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.copy-header {
+.copy-header h2 {
     font-weight: 400;
+    font-size: 24px;
     text-align: center;
+    align-content: center;
+    font-size: inherit;
+
 }
 
 .main-navbar {
@@ -37,7 +74,6 @@ main {
 }
 .main-navbar ul {
     list-style: none;
-    margin: 0;
     padding: 0;
 }
 
@@ -49,20 +85,12 @@ main {
     font-size: 17px;
 }
 
-
-.logo-search {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .banner {
     width: 100vw;
 }
 
-.search {
-    width: 60%;
+ul {
+  padding-left: 0px; 
 }
 
 .site {
@@ -71,20 +99,40 @@ main {
 footer {
     font-size: 12px;
 }
+.footer-completo {
+    display: flex;
+}
+.copyright {
+    text-align: left;
+    margin-top: 30px;
+}
 .section {
     font-size: 24px;
-    background-color: rgba(226, 225, 225, 0.4);
+    color: #666666;
+    padding: 15px;
+    text-align: inherit;
+}
+
+.fa-truck,
+.borde {
+    position: relative;
+    left: 177px;
+    bottom: -27px;
 }
 .price {
     font-size: 18px;
+    margin-right: 20px;
 }
 .discount {
-    font-size: 16px;
-    color: rgb(82, 212, 82);
+    font-size: 18px;
+    color: #39b54a;
 }
 .description {
-    display: none;
+    color: white;
     font-size: 16px;
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: all 1s;
 }
 
 .borde {
@@ -98,10 +146,8 @@ footer {
 .fa-truck::before {
     margin-top: 8px;
     margin-left: 6px;
-    color: rgb(82, 212, 82);
+    color: #39b54a;
 }
-
-
 
 .metodo_pago {
     text-align: center;
@@ -121,63 +167,66 @@ footer {
     text-align: center;
 }
 .icon_footer {
-    color: blue;
+    color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
 }
+.icon_footer:hover {
+    color: #39b54a;
+}
 
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-main {
-    width: 90%;
-}
+.flex-center,
 article {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+article {
     align-content: center;
     margin-bottom: 10px;
-    border: solid 10px rgba(226, 225, 225, 0.4);
-    
+    background-color: white;
+    text-align: center;
 }
-.details {
+article:hover {
+    box-shadow: 0px 0px 10px #646464;
+}
+article:hover .description {
+    color: black;
+}
+.detalle-producto {
     border-top: solid 1px #ebebeb;
     padding: 15px;
-
-}
-.fa-truck {
-    color: green;
+    display: flex;
 }
 
+h4 {
+    font-size: 15px;
+}
 .create-form {
-    padding: 20px 15px;
-    width: 100vw;
+    margin-top: 15px;
+    margin-left: 5px;
 }
 .control-formulario {
-    margin: 15px;
     width: 90vw;
-    display: flex;
-    align-content: center;
-    padding: 15px;
-    justify-content: center;
+    display: block;
+    padding: 8px;  
 }
 
-.input {
-    justify-content: center;
-    width: 90vw;
-    height: 30px;
-}
 .control-formulario label {
-    margin: 5px;
     font-style: italic;
     display: block;
 }
-.control {
-    width: 100%;
+.control,
+.date,
+.input,
+#contraseña,
+#confirmar-contraseña {
+    width: 90vw ;
     padding: 8px;
+    justify-content: center;
+    height: 30px;
+    border-radius: 10px;
 }
 .boton-formulario {
     background-color: #39b54a;
@@ -186,38 +235,90 @@ article {
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
+    margin-left: 25px;
 }
-
-.tituloPerfil {
-    font-weight: bold;
-    font-size: 16px;
+.botones-formulario {
+    margin-bottom: 30px;
+}
+.enviar-padre {
     display: flex;
+    margin: 15px;
+    padding: 8px;
+}
+.botonEnviar {
+    width: 90vw;
+    padding: 8px;
+    justify-content: center;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+}
+.botonEnviar:hover {
+    background-color: #0022AA;
+}
+.tituloPerfil {
+    font-weight: bolder;
+    font-size: 22px;
     align-items: stretch;
+    text-align: inherit;
+    margin-bottom: 20px;
 }
 
+.elementos-formulario {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.elementos-formulario2 {
+    display: flex;
+    flex-direction: column;
+}
+.intereses {
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.opciones-Intereses {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row-reverse;
+}
 .date {
     width: 90vw;
     height: 35px;
 }
 
 @media (min-width: 361px) {
-    .description {
-        display: none;
-    }
     .site {
         display: none;
     }
 }
 
 @media (min-width: 768px) {
+    .logoML {
+        width: 20%;
+    }
     .logo-search {
-        
         display: flex;
         justify-content: space-between;
     }
+    .barra-search {
+        width: 42%;
+    }
+    .search {
+        width: 80%;
+    }
+
     .copy-header {
         max-width: 350px;
         text-align: right;
+        margin-bottom: 10px;
+        font-size: 16px;
+        margin: 0px;
+        padding: 0px;
+
     }
     .hamburger-button {
         display: none;
@@ -238,20 +339,43 @@ article {
     .site {
         display: block;
     }
-
-    .description {
-        display: block;
+    .conjunto-de-articulos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
     }
-    
+
+    article {
+        box-shadow: 0px 0px 10px #646464;
+        width: 42%;
+        margin: 25px;
+    }
+    .control-formulario {
+        width: 90vw;
+        display: block;
+        padding: 8px;
+        margin: 15px;    
+    }
 }
 
 @media (min-width: 1200px) {
     .logoML {
         width: 250px;
     }
+    .logo-search {
+        justify-content: start;
+    }
+    main {
+        margin-right: 15px;
+        width: 100vw;
+    }
+    .right-navbar {
+        margin-right: 40px;
+    }
+    
     .main-header, 
     .main-navbar {
-        max-width: 1200px;
         margin: auto;
     }
 
@@ -263,6 +387,15 @@ article {
         max-width: none;
         font-size: 18px;
         font-weight: 400;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .search {
+        width: 90%;
+        margin-left: 27px;
+    }
+    .cuotas {
+        margin-left: 40px;
     }
     .main-navbar {
         margin-top: 40px;
@@ -273,8 +406,23 @@ article {
     .main-navbar a {
         font-size: 19px;
     }
-    .description {
-        display: block;
+
+    .fa-truck, 
+    .borde {
+        position: relative;
+        left: 168px;
+        bottom: -27px;
+    }
+    .conjunto-de-articulos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    article {
+        box-shadow: 0px 0px 10px #646464;
+        width: 20%;
+        margin: 27px;
     }
 }
 

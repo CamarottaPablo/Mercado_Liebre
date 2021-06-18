@@ -47,48 +47,54 @@
     <form action="/" method="GET" class="create-form">
         <div class="control-formulario">
             <label>Nombre de usuari@</label>
-            <input type="text" name="nombreUsuario" class="control" minlength="4">
+            <input type="text" name="nombreUsuario" style="border:none" class="control" required minlength="4">
         </div>
         
         <div class="control-formulario">
             <label for="contraseña">Contraseña</label>
-            <input type="password" id="contraseña" name="contraseña">
+            <input type="password" id="contraseña" style="border:none" required name="contraseña">
         </div>
-        
-        <button type="reset" class="boton-formulario">Reset</button>
-        <button type="submit" class="boton-formulario">Enviar</button>
+        <div class="enviar-padre">
+            <button type="submit" class="botonEnviar">Enviar</button>
+        </div>
     </form>
     <footer>
         <ul type="none">
-            <div>
-                <div class="icon_footer">
-                    <i class="fas fa-credit-card"></i>
+            <div class="footer-completo">
+                <div class="metodo-pago">
+                    <div class="icon_footer">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <li>
+                        <h4>Pagá con tarjeta o en efectivo</h4>
+                    </li>
+                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!</p>
                 </div>
-                <li>
-                    <h4>Pagá con tarjeta o en efectivo</h4>
-                </li>
-                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                    puntos de pago. ¡Y siempre es seguro!</p>
-                <div class="icon_footer">
-                    <i class="fas fa-gift"></i>
+                <div class="envios">
+                    <div class="icon_footer">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <li>
+                        <h4>Envío gratis desde $ 2.500</h4>
+                    </li>
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.</p>
                 </div>
-                <li>
-                    <h4>Envío gratis desde $ 2.500</h4>
-                </li>
-                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                    productos. Es un beneficio de Mercado Puntos.</p>
-                <div class="icon_footer">
-                    <i class="fas fa-user-shield"></i>
+                <div class="seguridad">
+                    <div class="icon_footer">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <li>
+                        <h4>Seguridad, de principio a fin</h4>
+                    </li>
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.</p>
                 </div>
-                <li>
-                    <h4>Seguridad, de principio a fin</h4>
-                </li>
-                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                    porque estás siempre protegid@.</p>
-                <li>
+            </div>
+                <li class="copyright">
                     <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
                 </li>
-            </div>
         </ul>
     </footer>
 </body>

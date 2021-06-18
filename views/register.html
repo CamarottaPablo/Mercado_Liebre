@@ -46,87 +46,109 @@
     </header>
     <form action="/" method="GET" class="create-form">
         <div class="control-formulario">
-            <input type="text" name="nombre" class="control" placeholder="Nombre y apellido">
+            <input type="text" name="nombre" class="control" style="border:none" required placeholder="Nombre y apellido">
         </div>
         <div class="control-formulario">
-            <input type="text" name="nombreUsuario" class="control" placeholder="Nombre de usuario">
+            <input type="text" name="nombreUsuario" class="control" style="border:none" required placeholder="Nombre de usuario">
         </div>
         <div class="control-formulario">
-            <input type="email" name="email" class="control" placeholder="E-mail">
+            <input type="email" name="email" class="control" style="border:none" required placeholder="E-mail">
         </div>
         <div class="control-formulario">
-            <div></div><label class="tituloPerfil">Fecha de nacimiento:</label></div>
-            <input class="date" type="date" name="nacimiento">
+            <div><label class="tituloPerfil">Fecha de nacimiento:</label></div>
+            <input class="date" type="date" style="border:none" required name="nacimiento">
         </div>
         <div class="control-formulario">
-            <input class="input" type="text" name="domicilio" placeholder="Domicilio">
+            <input class="input" type="text" name="domicilio" style="border:none" required placeholder="Domicilio">
         </div>
         <div class="control-formulario">
             <label class="tituloPerfil">Perfil del usuario:</label>
+            <div class="elementos-formulario">
             <input type="radio" id="comprador" name="comprador" value="comprador">
             <label for="comprador">Comprador</label><br>
             <input type="radio" id="vendedor" name="vendedor" value="vendedor">
             <label for="vendedor">Vendedor</label><br>
         </div>
+        </div>
         <div class="control-formulario">
             <label class="tituloPerfil">Intereses</label>
-            <label for="electro">Electro</label>
-            <input type="checkbox" id="electro" name="electro" value="electro">
-            <label for="moda">Moda</label>
-            <input type="checkbox" id="moda" name="moda" value="moda">
-            <label for="hogar">Hogar</label>
-            <input type="checkbox" id="hogar" name="hogar" value="hogar">
-            <label for="jugueteria">Jugueteria</label>
-            <input type="checkbox" id="jugueteria" name="jugueteria" value="jugueteria">
-            <label for="vida-sana">Vida sana</label>
-            <input type="checkbox" id="vida-sana" name="vida-sana" value="vida-sana">
+            <div class="elementos-formulario2">
+                <div class="opciones-Intereses">
+                    <label class="intereses" for="electro">Electro</label>
+                    <input type="checkbox" id="electro" name="electro" value="electro">
+                </div>
+                <div class="opciones-Intereses">
+                    <label class="intereses" for="moda">Moda</label>
+                    <input type="checkbox" id="moda" name="moda" value="moda">
+                </div>
+                <div class="opciones-Intereses">
+                    <label class="intereses" for="hogar">Hogar</label>
+                    <input type="checkbox" id="hogar" name="hogar" value="hogar">
+                </div>
+                <div class="opciones-Intereses">
+                    <label class="intereses" for="jugueteria">Jugueteria</label>
+                    <input type="checkbox" id="jugueteria" name="jugueteria" value="jugueteria">
+                </div>
+                <div class="opciones-Intereses">
+                    <label class="intereses" for="vida-sana">Vida sana</label>
+                    <input type="checkbox" id="vida-sana" name="vida-sana" value="vida-sana">
+                </div>
+            </div>
         </div>
         <div class="control-formulario">
             <label class="tituloPerfil" for="foto-perfil">Foto de usuario</label>
             <input type="file" id="foto-perfil" name="foto-perfil" value="foto-perfil">
         </div>
         <div class="control-formulario">
-            <label for="contraseña">Contraseña</label>
-            <input type="password" id="contraseña" name="contraseña">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" style="border:none" required name="contraseña">
         </div>
         <div class="control-formulario">
-            <label for="confirmar-contraseña">Confirmar contraseña</label>
-            <input type="password" id="confirmar-contraseña" name="confirmar-contraseña">
+                <label for="confirmar-contraseña">Confirmar contraseña</label>
+                <input type="password" id="confirmar-contraseña" style="border:none" required name="confirmar-contraseña">
         </div>
-        <button type="reset" class="boton-formulario">Reset</button>
-        <button type="submit" class="boton-formulario">Enviar</button>
+        <div class="botones-formulario">
+            <button type="reset" class="boton-formulario">Reset</button>
+            <button type="submit" class="boton-formulario">Enviar</button>
+        </div>
     </form>
     <footer>
         <ul type="none">
-            <div>
-                <div class="icon_footer">
-                    <i class="fas fa-credit-card"></i>
+            <div class="footer-completo">
+                <div class="metodo-pago">
+                    <div class="icon_footer">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <li>
+                        <h4>Pagá con tarjeta o en efectivo</h4>
+                    </li>
+                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!</p>
                 </div>
-                <li>
-                    <h4>Pagá con tarjeta o en efectivo</h4>
-                </li>
-                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                    puntos de pago. ¡Y siempre es seguro!</p>
-                <div class="icon_footer">
-                    <i class="fas fa-gift"></i>
+                <div class="envios">
+                    <div class="icon_footer">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <li>
+                        <h4>Envío gratis desde $ 2.500</h4>
+                    </li>
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.</p>
                 </div>
-                <li>
-                    <h4>Envío gratis desde $ 2.500</h4>
-                </li>
-                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                    productos. Es un beneficio de Mercado Puntos.</p>
-                <div class="icon_footer">
-                    <i class="fas fa-user-shield"></i>
+                <div class="seguridad">
+                    <div class="icon_footer">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <li>
+                        <h4>Seguridad, de principio a fin</h4>
+                    </li>
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.</p>
                 </div>
-                <li>
-                    <h4>Seguridad, de principio a fin</h4>
-                </li>
-                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                    porque estás siempre protegid@.</p>
-                <li>
+            </div>
+                <li class="copyright">
                     <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
                 </li>
-            </div>
         </ul>
     </footer>
 </body>
